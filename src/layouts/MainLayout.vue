@@ -1,30 +1,56 @@
 <template>
     <div class="">
-        <header class="sticky top-0 z-50 w-full">
-          <section>
+      <header class="sticky top-0 z-50 w-full shadow-lg bg-gradient-to-br from-slate-400 via-sky-500 to-slate-900">
+  <!-- Barra superior -->
+  <section class="flex items-center justify-between px-4 py-2 text-sm text-white">
+    <img class="h-8" src="../assets/ssl-certificate.png" alt="Certificado SSL">
+    <p class="font-bold tracking-wider ">medicinaparaestres.com</p>
+    <img class="h-8" src="https://medicinaparaansiedad.com/img/logo.png" alt="Logo">
+  </section>
 
-          </section>
-            <section class="w-full bg-white">
-                <div class="flex justify-start w-full py-2 space-x-4 text-lg bg-white px-9 font-josefin-sans">
-                    <RouterLink :class="{'border-b-orange-500 border-b-2 ': route.name === 'home'}" :to="{ name: 'home' }" >Inicio</RouterLink>
-                    <RouterLink :class="{'border-b-orange-500 border-b-2': route.name === 'spaOne'}" :to="{ name: 'spaOne' }" >Beneficios</RouterLink>
-                    <RouterLink :class="{'border-b-orange-500 border-b-2': route.name === 'spaTwo'}" :to="{ name: 'spaTwo' }" >Ingredientes</RouterLink>
-                    <RouterLink :class="{'border-b-orange-500 border-b-2': route.name === 'spaThree'}" :to="{ name: 'spaThree' }" >Preguntas</RouterLink>
-                    <RouterLink :class="{'border-b-orange-500 border-b-2': route.name === 'non'}" :to="{ name: 'home' }" >Prasadam</RouterLink>
-                </div>
-                <div class="flex items-center justify-around py-1 text-xl text-white bg-orange-400 shadow-md font-poppins">
-                    <img class="w-12" src="../assets/ssl-certificate.png" alt="">
-                    <p class="font-parkinsans">medicinaparaartritis.com</p>
-                    <img class="w-12" src="https://medicinaparaansiedad.com/img/logo.png" alt="">
-                </div>
-            </section>
-        </header>
+  <!-- Navegación principal -->
+  <nav class="flex justify-center bg-white shadow-md">
+    <ul class="flex px-6 py-4 space-x-6 text-base font-medium text-gray-700">
+      <li>
+        <RouterLink
+          :class="route.name === 'home' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
+          :to="{ name: 'home' }"
+        >Inicio</RouterLink>
+      </li>
+      <li>
+        <RouterLink
+          :class="route.name === 'spaOne' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
+          :to="{ name: 'spaOne' }"
+        >Beneficios</RouterLink>
+      </li>
+      <li>
+        <RouterLink
+          :class="route.name === 'spaTwo' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
+          :to="{ name: 'spaTwo' }"
+        >Ingredientes</RouterLink>
+      </li>
+      <li>
+        <RouterLink
+          :class="route.name === 'spaThree' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
+          :to="{ name: 'spaThree' }"
+        >Preguntas</RouterLink>
+      </li>
+      <li>
+        <RouterLink
+          :class="route.name === 'non' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
+          :to="{ name: 'home' }"
+        >Prasadam</RouterLink>
+      </li>
+    </ul>
+  </nav>
+</header>
+
         <main class="overflow-hidden">
             <slot name="main">
 
             </slot>
         </main>
-        <footer class="relative w-full p-6 text-white bg-orange-800 font-poppins">
+        <footer class="relative w-full p-6 text-white bg-sky-800 font-poppins">
         <!-- Sección Título -->
         <div class="mb-6 text-center">
             <h2 class="text-3xl font-bold lg:text-5xl">Contacto</h2>
@@ -51,13 +77,13 @@
             <!-- Teléfonos -->
             <div class="flex flex-col items-center">
                 <i class="mb-2 text-3xl fas fa-phone"></i>
-                <a href="tel:+525563950178" class="text-sm font-bold lg:text-lg hover:text-orange-500">
+                <a href="tel:+525563950178" class="px-2 py-1 text-sm font-bold text-white rounded-lg hover:text-sky-500 bg-cyan-600 ">
                     +52 55 6395 0178
                 </a>
             </div>
             <div class="flex flex-col items-center">
                 <i class="mb-2 text-3xl fas fa-phone"></i>
-                <a href="tel:+525563950179" class="text-sm font-bold lg:text-lg hover:text-orange-500">
+                <a href="tel:+525563950179" class="px-2 py-1 text-sm font-bold text-white rounded-lg hover:text-sky-500 bg-cyan-600 ">
                     +52 55 6395 0179
                 </a>
             </div>
@@ -65,7 +91,7 @@
             <!-- Email -->
             <div class="flex flex-col items-center">
                 <i class="mb-2 text-3xl fas fa-envelope"></i>
-                <a href="mailto:informes@prasadam.mx" class="text-sm font-bold lg:text-lg hover:text-orange-500">
+                <a href="mailto:informes@prasadam.mx" class="px-2 py-1 text-sm font-bold text-white rounded-lg hover:text-sky-500 bg-cyan-600 ">
                     informes@prasadam.mx
                 </a>
             </div>
@@ -73,7 +99,7 @@
             <!-- WhatsApp -->
             <div class="flex flex-col items-center">
                 <i class="mb-2 text-3xl fab fa-whatsapp"></i>
-                <a href="https://wa.me/525562516687" target="_blank" rel="noopener noreferrer" class="text-sm font-bold lg:text-lg hover:text-orange-500">
+                <a href="https://wa.me/525562516687" target="_blank" rel="noopener noreferrer" class="px-2 py-1 text-sm font-bold text-white rounded-lg hover:text-sky-500 bg-cyan-600 ">
                     +52 5562516687
                 </a>
             </div>

@@ -1,16 +1,16 @@
 <template>
 <section>
-  <article class="flex items-center justify-center gap-10 p-10 bg-gradient-to-r from-orange-700 via-yellow-500 to-orange-700">
+  <article class="flex items-center justify-center gap-10 p-10 bg-gradient-to-r from-sky-700 via-cyan-500 to-sky-700">
     <!-- Contenedor de texto con estilos modernos -->
     <div class="flex flex-col gap-5 p-6 bg-white rounded-lg shadow-lg bg-opacity-90">
-      <h2 class="text-3xl font-bold text-orange-800">
+      <h2 class="text-3xl font-bold text-sky-800">
         FLEX-IMAC FORTE: Alivie y Revitalice sus Articulaciones y Músculos
       </h2>
       <h2 class="text-xl font-semibold text-black">
         <i class="text-green-400 fas fa-hand-holding-medical"></i> Apoyo Directo a sus Articulaciones <i class="text-green-400 fas fa-hand-holding-medical"></i>
       </h2>
       <h2 class="text-xl font-semibold text-black">
-        <i class="text-orange-400 fas fa-dumbbell"></i> Mejore su Flexibilidad y Fuerza <i class="text-orange-400 fas fa-dumbbell"></i>
+        <i class="text-sky-400 fas fa-dumbbell"></i> Mejore su Flexibilidad y Fuerza <i class="text-sky-400 fas fa-dumbbell"></i>
       </h2>
       <h2 class="text-xl font-semibold text-black">
         <i class="text-white fas fa-heartbeat"></i> Fortalezca y Cuide sus Músculos <i class="text-white fas fa-heartbeat"></i>
@@ -36,7 +36,7 @@
   </article>
 
   <!-- Sección de imágenes en grid con título en cada una -->
-  <section class="grid grid-cols-2 gap-4 p-4 font-bold md:grid-cols-3 lg:grid-cols-4 font-poppins bg-gradient-to-r from-orange-700 via-yellow-500 to-orange-700">
+  <section class="grid grid-cols-2 gap-4 p-4 font-bold md:grid-cols-3 lg:grid-cols-4 font-poppins bg-gradient-to-r from-sky-700 via-cyan-500 to-sky-700">
     <div class="relative overflow-hidden bg-white rounded-lg shadow-lg">
       <img src="https://files.oaiusercontent.com/file-71wLV49UkWyoA3AL4nsq6r?se=2024-11-29T23%3A09%3A17Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D57b746b8-fe71-45d9-a3f9-7ac1e80e22a4.webp&sig=CmlG1W4N9ftuIv9K9xm3uth0WKr%2BGPWNlRz0foDhR24%3D" alt="Problemas de relación" class="object-cover w-full h-full">
       <h2 class="absolute bottom-0 left-0 right-0 p-4 text-center text-white bg-black bg-opacity-50">Alivio al dolor de espalda</h2>

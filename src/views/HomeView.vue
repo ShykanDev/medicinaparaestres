@@ -6,10 +6,18 @@
           <IntroCard/>
         </section>
         <section class="py-8 font-poppins">
-          <h2 class="py-6 mb-6 text-2xl font-bold text-center text-white bg-orange-600 font-poppins">
-            Cómo Flex-Imac Forte Le Ayuda con la Gestión de la Salud muscular y articular
+          <h2 class="py-6 mb-6 text-2xl font-bold text-center text-white bg-sky-600 font-poppins">
+            Cómo JI Relax Le Ayuda con la Gestión de la Salud muscular y articular
           </h2>
-          <div class="container px-4 mx-auto">
+          <section class="flex flex-wrap justify-around w-full gap-2 px-2 mt-5 space-y-3">
+            <SmallIntroCard/>
+            <SmallIntroCard/>
+            <SmallIntroCard/>
+            <SmallIntroCard/>
+            <SmallIntroCard/>
+            <SmallIntroCard/>
+          </section>
+          <!-- <div class="container px-4 mx-auto">
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
               <div data-aos="zoom-out-right"  class="p-6 bg-white rounded-lg shadow-lg">
                 <img alt="Imagen de una persona estirándose para mostrar flexibilidad muscular"
@@ -190,7 +198,7 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div> -->
         </section>
 
         <section class="flex flex-wrap justify-around w-full gap-2 px-2 mt-5 space-y-3">
@@ -232,13 +240,23 @@
             image="https://storage.googleapis.com/a1aa/image/IOFNwxSs2LrAIxKfEt7OaeYONnOP7FekAVe1n3WKOsLLDeseE.jpg" />
         </section>
 
-        <section class="flex justify-center p-4 px-3 mt-5 text-white bg-green-600">
+        <section class="flex justify-center p-4 px-3 mt-5 text-white bg-cyan-600">
           <h1 class="text-3xl font-bold">
             Flex-Imac Forte, una medicina ayurvedica para mejorar tu estilo de vida
           </h1>
         </section>
+        <article class="flex flex-col justify-center">
+          <CardInfoSm/>
+          <CardInfoSm/>
+          <CardInfoSm/>
+          <CardInfoSm/>
+          <CardInfoSm/>
+          <CardInfoSm/>
+          <CardInfoSm/>
+          <CardInfoSm/>
+        </article>
 
-        <section class="p-6 font-poppins">
+        <!-- <section class="p-6 font-poppins">
           <section class="mb-8">
             <h2 class="mb-4 text-2xl font-bold">
               ¿Qué es la Medicina Ayurvédica?
@@ -381,7 +399,7 @@
                   </span>
                 </div>
                 <div class="flex items-center mt-2">
-                  <i class="mr-2 text-xl text-orange-600 fas fa-carrot">
+                  <i class="mr-2 text-xl text-sky-600 fas fa-carrot">
                   </i>
                   <span>
                     Nutrición balanceada
@@ -610,111 +628,116 @@
             </div>
 
           </section>
-        </section>
+        </section> -->
 
-        <section class="flex flex-col items-center justify-center w-full min-h-screen bg-white font-poppins ">
+        <section class="flex flex-col items-center justify-center w-full min-h-screen font-poppins">
         <div class="w-full mb-8 text-center">
-            <h2 class="px-5 py-5 text-2xl font-bold text-white bg-orange-700">Cómo la Medicina Ayurvédica Puede Ayudar con el Dolor Muscular y Articular</h2>
+            <h2 class="px-5 py-5 text-2xl font-bold text-white bg-cyan-700">Cómo la Medicina Ayurvédica Puede Ayudar con el Dolor Muscular y Articular</h2>
         </div>
-        <div class="w-full max-w-4xl">
-            <iframe class="w-full h-96" src="https://www.youtube.com/embed/lFayag6SS6k?si=2BMfyyLajJB4lBVi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="flex flex-col items-center w-full max-w-7xl md:flex-row">
+            <div class="w-full md:w-1/2">
+                <iframe class="w-full rounded-md min-h-80" src="https://www.youtube.com/embed/1T2ngh_RoH4?si=W4O-XMJftstSqCoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="w-full mt-8 text-center md:w-1/2 md:mt-0 md:ml-8 md:text-left">
+                <ul class="list-none list-inside">
+                    <li class="mb-2"><i class="text-cyan-500 fas fa-video"></i> En este video se explica cómo la medicina ayurvédica puede ayudar con el dolor muscular y articular.</li>
+                    <li class="mb-2"><i class="text-cyan-500 fas fa-leaf"></i> Se detallan los principios básicos de la medicina ayurvédica.</li>
+                    <li class="mb-2"><i class="text-cyan-500 fas fa-spa"></i> Se presentan remedios naturales y técnicas de tratamiento.</li>
+                    <li class="mb-2"><i class="text-cyan-500 fas fa-lightbulb"></i> Se ofrecen consejos prácticos para incorporar la medicina ayurvédica en la vida diaria.</li>
+                    <li class="mb-2"><i class="text-cyan-500 fas fa-utensils"></i> Se discuten los beneficios de la dieta y el estilo de vida ayurvédico.</li>
+                </ul>
+            </div>
         </div>
-        <div class="mt-8 text-center">
-            <ul class="text-left list-none list-inside">
-                <li class="mb-2"><i class="text-orange-500 fas fa-video"></i> En este video se explica cómo la medicina ayurvédica puede ayudar con el dolor muscular y articular.</li>
-                <li class="mb-2"><i class="text-green-500 fas fa-leaf"></i> Se detallan los principios básicos de la medicina ayurvédica.</li>
-                <li class="mb-2"><i class="text-purple-500 fas fa-spa"></i> Se presentan remedios naturales y técnicas de tratamiento.</li>
-                <li class="mb-2"><i class="text-red-500 fas fa-utensils"></i> Se discuten los beneficios de la dieta y el estilo de vida ayurvédico.</li>
-                <li class="mb-2"><i class="text-yellow-500 fas fa-lightbulb"></i> Se ofrecen consejos prácticos para incorporar la medicina ayurvédica en la vida diaria.</li>
-            </ul>
-        </div>
-        </section>
+    </section>
+
 
         <section class="w-full mt-5 font-poppins">
-   <h1 class="w-full py-5 mb-6 text-4xl font-bold text-center text-white bg-orange-800">
+   <h1 class="w-full py-5 mb-6 text-4xl font-bold text-center text-white bg-cyan-800">
     Noticias
    </h1>
    <div class="grid grid-cols-1 gap-6 px-2 md:grid-cols-2 lg:grid-cols-3">
     <div class="overflow-hidden bg-white rounded-lg shadow-md border-animated">
-     <img alt="Imagen de Noticia 1: Una vista panorámica de una ciudad moderna con rascacielos y un cielo despejado" class="object-cover w-full h-48" height="400" src="https://www.clinicbarcelona.org/media/cache/1536_webp/uploads/media/default/0002/64/f2d39b1839ee3a78a6b036ce131f90622b0988e0.webp" width="600"/>
+     <img alt="Imagen de Noticia 1: Una vista panorámica de una ciudad moderna con rascacielos y un cielo despejado" class="object-cover w-full h-48" height="400" src="https://www.gob.mx/cms/uploads/article/main_image/97543/07_07_20_Estres_Blog_DG.jpg" width="600"/>
      <div class="p-4">
       <h2 class="mb-2 text-xl font-bold">
-        Identifican una estrategia preventiva que podría frenar el inicio de la artritis
+        El estrés y tu salud
       </h2>
       <p class="mb-4 text-gray-700">
-        Un estudio en el que han participado investigadores del Hospital Clínic-IDIBAPS demuestra que la artritis reumatoide puede tener su origen en el intestino, tras una alteración de la barrera intestinal.
+        Si te mareas con frecuencia, tienes problemas para dormir, te sientes cansado todo el tiempo, tienes dolores de cabeza, sufres sobrepeso por comer más de lo normal, estás irritable, tienes tensión muscular o te sientes abrumado, puedes estar sufriendo de estrés.
       </p>
-      <a class="text-orange-500 hover:underline" href="https://www.clinicbarcelona.org/noticias/descubren-un-tipo-de-fibroblasto-clave-en-la-resolucion-de-la-inflamacion-articular-en-artritis-reumatoide-y-artritis-psoriasica" target="_blank">
+      <a class="text-sky-500 hover:underline" href="https://www.gob.mx/issste/articulos/el-estres-y-tu-salud?idiom=es" target="_blank">
        Ver más
       </a>
      </div>
     </div>
     <div class="overflow-hidden bg-white rounded-lg shadow-md border-animated">
-     <img alt="Imagen de Noticia 2: Un grupo de personas en una conferencia, con un orador en el escenario" class="object-cover w-full h-48" height="400" src="https://www.pmfarma.com/noticias/noticias/48227/image/artri.jpg" width="600"/>
+     <img alt="Imagen de Noticia 2: Un grupo de personas en una conferencia, con un orador en el escenario" class="object-cover w-full h-48" height="400" src="https://cuidateplus.marca.com/sites/default/files/styles/natural/public/cms/2024-04/estres.jpg.webp?itok=gCUf_tRs" width="600"/>
      <div class="p-4">
       <h2 class="mb-2 text-xl font-bold">
-        La artritis reumatoide afecta al 75% de mujeres mexicanas en edad productiva
+        Control del estrés
       </h2>
       <p class="mb-4 text-gray-700">
-        En Latinoamérica, existen alrededor de 34 millones de pacientes afectados con discapacidad permanente
+        Los síntomas de estrés pueden estar afectando tu salud, aunque no lo sepas. Puedes culpar a la enfermedad de ese molesto dolor de cabeza, de tus problemas para dormir, de sentirte indispuesto o de tu falta de concentración en el trabajo. Pero es posible que el estrés sea realmente la causa.
       </p>
-      <a class="text-orange-500 hover:underline" href="https://www.pmfarma.com/app/noticias/48227-la-artritis-reumatoide-afecta-al-75-de-mujeres-mexicanas-en-edad-productiva" target="_blank">
+      <a class="text-sky-500 hover:underline" href="https://www.mayoclinic.org/es/healthy-lifestyle/stress-management/in-depth/stress-symptoms/art-20050987" target="_blank">
        Ver más
       </a>
      </div>
     </div>
     <div class="overflow-hidden bg-white rounded-lg shadow-md border-animated">
-     <img alt="Imagen de Noticia 3: Un paisaje natural con montañas y un lago en el fondo" class="object-cover w-full h-48" height="400" src="https://blob.udgtv.com/images/2024/10/14/artritis-pexels-focus-0-0-696-464.jpg" width="600"/>
+     <img alt="Imagen de Noticia 3: Un paisaje natural con montañas y un lago en el fondo" class="object-cover w-full h-48" height="400" src="https://uapa.cuaed.unam.mx/sites/default/files/minisite/static/911f3feb-b698-4c1f-a203-b38dbc741928/estres%20reconocelo/img/1persona_estresada.jpg" width="600"/>
      <div class="p-4">
       <h2 class="mb-2 text-xl font-bold">
-        Artritis Reumatoide, enfermedad que ataca no sólo a adultos mayores, sino a jóvenes
+        Estrés Laboral
       </h2>
       <p class="mb-4 text-gray-700">
-        La Artritis Reumatoide es una de las enfermedades autoinmunes más prevalente en la población mexicana, se estima que uno por ciento de los adultos son diagnosticados con esta enfermedad.
+        El 75% de los mexicanos padece fatiga
+por estrés laboral, superando a países
+como China y Estados Unidos
       </p>
-      <a class="text-orange-500 hover:underline" href="https://udgtv.com/noticias/artritis-reumatoide-enfermedad-que-ataca/243537" target="_blank">
+      <a class="text-sky-500 hover:underline" href="https://www.imss.gob.mx/salud-en-linea/estres-laboral" target="_blank">
        Ver más
       </a>
      </div>
     </div>
     <div class="overflow-hidden bg-white rounded-lg shadow-md border-animated">
-     <img alt="Imagen de Noticia 4: Un equipo de científicos trabajando en un laboratorio" class="object-cover w-full h-48" height="400" src="https://www.infobae.com/resizer/v2/X3ROBORC6ZCBHDLU5SJCT6PZSY.jpg?auth=e03c6f2193c8ab3ea2593bd075f4aa5a66709bca797c0f227d3f73e7960f5759&smart=true&width=992&height=606&quality=85" width="600"/>
+     <img alt="Imagen de Noticia 4: Un equipo de científicos trabajando en un laboratorio" class="object-cover w-full h-48" height="400" src="https://owh-wh-d9-prod.s3.amazonaws.com/s3fs-public/heading-images/Stressandyourhealth.jpg?VersionId=YQ0yx9xp8I37hW26e7dLu2t19D2XxNpP" width="600"/>
      <div class="p-4">
       <h2 class="mb-2 text-xl font-bold">
-        Qué hacer en caso de dolor muscular
+        El estrés y tu salud
       </h2>
       <p class="mb-4 text-gray-700">
-        El cuerpo avisa, lo hace cuando está bien o cuando se encuentra mal y es a través de los primeros signos que prende las alertas sobre algún padecimiento. Por eso es importante aprender a oirlo y a la primera llamada de atención visitar al doctor.
+        El estrés es una reacción a un cambio o desafío. A corto plazo, el estrés puede ser útil. Te hace estar más alerta y te da energía para terminar tus tareas.
       </p>
-      <a class="text-orange-500 hover:underline" href="https://www.infobae.com/noticias/2024/03/04/que-hacer-en-caso-de-dolor-muscular/" target="_blank">
+      <a class="text-sky-500 hover:underline" href="https://espanol.womenshealth.gov/mental-health/good-mental-health/stress-and-your-health" target="_blank">
        Ver más
       </a>
      </div>
     </div>
     <div class="overflow-hidden bg-white rounded-lg shadow-md border-animated">
-     <img alt="Imagen de Noticia 5: Un evento deportivo con jugadores en acción en un campo de fútbol" class="object-cover w-full h-48" height="400" src="https://www.lanacion.com.ar/resizer/v2/se-trata-de-un-aliado-natural-para-prevenir-BCIKSXJZ7JEN5MYKVUJ2ASFUSY.jpg?auth=01aa5b247897e45380cfb3a73620d50f1073ea410b86133cafceb39657dc5743&width=880&height=586&quality=70&smart=true" width="600"/>
+     <img alt="Imagen de Noticia 5: Un evento deportivo con jugadores en acción en un campo de fútbol" class="object-cover w-full h-48" height="400" src="https://staticnew-prod.topdoctors.es/files/Image/large/a59b88b330de98f8e6986634f2f8cb3d.jpg" width="600"/>
      <div class="p-4">
       <h2 class="mb-2 text-xl font-bold">
-        La planta que tiene mala fama pero que cura el dolor muscular y aumenta el colágeno
+        ¿Qué es el estrés?
       </h2>
       <p class="mb-4 text-gray-700">
-        Desde propiedades antiinflamatorias hasta ayudar a prevenir ciertas afecciones, es considerada un aliado natural; sus propiedades y cómo consumirla
+        El estrés es un estado de tensión física y emocional originado como reacción a una estímulo o presión, ya sea positivo o negativo. Se trata de un estado de defensa que, en pequeñas dosis, ayuda al organismo a reaccionar y adaptarse a los acontecimientos.
       </p>
-      <a class="text-orange-500 hover:underline" href="https://www.lanacion.com.ar/lifestyle/cuidado-cuerpo-belleza/la-planta-que-tiene-mala-fama-pero-que-cura-el-dolor-muscular-y-aumenta-el-colageno-nid28112024/" target="_blank">
+      <a class="text-sky-500 hover:underline" href="https://www.topdoctors.es/diccionario-medico/estres/" target="_blank">
        Ver más
       </a>
      </div>
     </div>
     <div class="overflow-hidden bg-white rounded-lg shadow-md border-animated">
-     <img alt="Imagen de Noticia 6: Una reunión de negocios con personas discutiendo alrededor de una mesa" class="object-cover w-full h-48" height="400" src="https://www.infobae.com/resizer/v2/UD2EFBVGY5HKTB2PK4SJXDL3K4.jpg?auth=8a5430c05e41aea8c4f91ad341525d7b51e9a9fd82cd4867229d2a7481d668de&smart=true&width=992&height=558&quality=85" width="600"/>
+     <img alt="Imagen de Noticia 6: Una reunión de negocios con personas discutiendo alrededor de una mesa" class="object-cover w-full h-48" height="400" src="https://cdn-cinfasalud.cinfa.com/wp-content/uploads/2015/04/imagen-estres1.jpg?x19187" width="600"/>
      <div class="p-4">
       <h2 class="mb-2 text-xl font-bold">
-        Dolor muscular: estrategias de autocuidado basadas en la ciencia para un alivio eficaz
+        ¿Cómo combatir el estrés?
       </h2>
       <p class="mb-4 text-gray-700">
-        El dolor muscular es una afección común que puede aliviarse con un autocuidado informado. Cómo entender el origen del dolor y elegir analgésicos adecuados para un manejo seguro y efectivo
+        El estrés puede ser descrito como una situación de sobrecarga o de presión que afecta a una persona y que depende  tanto de las demandas de la situación, como de los recursos de la persona para afrontarla. Así, se trata de un sentimiento de tensión física o emocional que se produce de manera automática y natural ante situaciones o pensamientos que nos resultan amenazadores, frustrantes o desafiantes.
       </p>
-      <a class="text-orange-500 hover:underline" href="https://www.infobae.com/inhouse/2024/07/01/dolor-muscular-estrategias-de-autocuidado-basadas-en-la-ciencia-para-un-alivio-eficaz/" target="_blank">
+      <a class="text-sky-500 hover:underline" href="https://cinfasalud.cinfa.com/p/estres/" target="_blank">
        Ver más
       </a>
      </div>
@@ -806,7 +829,8 @@
 import MainLayout from '@/layouts/MainLayout.vue';
 import InfoCardMain  from '@/components/InfoCardMain.vue';
 import IntroCard from '@/components/IntroCard.vue';
-
+import SmallIntroCard from '@/components/SmallIntroCard.vue';
+import CardInfoSm from '@/components/CardInfoSm.vue';
 </script>
 
 <style scoped></style>

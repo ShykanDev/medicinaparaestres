@@ -1,17 +1,32 @@
 <template>
   <div
-    class="max-w-lg mx-auto overflow-hidden bg-white border rounded-lg shadow-md border-green-50 md:max-w-lg "
+    class="mx-auto overflow-hidden transition-transform border shadow-lg max-w-96 bg-gradient-to-b from-orange-50 to-white rounded-xl hover:scale-105"
   >
     <!-- Imagen -->
-    <img :src="image" alt="Card image" class="object-cover w-full max-h-60 " />
+    <div class="relative w-full h-48 overflow-hidden rounded-t-xl">
+      <img
+        :src="image"
+        alt="Card image"
+        class="object-cover w-full h-full transition-opacity hover:opacity-90"
+      />
+      <div
+        class="absolute inset-0 opacity-50 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+    </div>
 
     <!-- Contenido -->
-    <div class="p-4">
+    <div class="p-5">
       <!-- Título -->
-      <h2 class="mb-2 text-xl font-semibold text-center text-orange-600 border-b-2 border-b-orange-500 font-poppins ">{{ title }}</h2>
+      <h2
+        class="mb-3 text-lg font-bold tracking-wide text-center text-gray-800 font-poppins">
+        {{ title }}
+      </h2>
 
       <!-- Resumen -->
-      <p class="text-base text-gray-600 font-poppins">{{ summary }}</p>
+      <p class="text-sm leading-relaxed text-justify text-gray-600">
+        {{ summary }}
+      </p>
+
+
     </div>
   </div>
 </template>
@@ -35,7 +50,3 @@ defineProps({
   },
 });
 </script>
-
-<style>
-/* No es necesario agregar estilos personalizados debido a TailwindCSS */
-</style>
