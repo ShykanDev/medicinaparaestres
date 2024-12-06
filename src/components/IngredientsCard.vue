@@ -38,14 +38,20 @@
 
 <script lang="ts" setup>
 
+interface InfoItem {
+  id: number,
+  property: string,
+  description: string
+}
+
+
 const props = defineProps({
   mainTitle: String,
   smallIntro: String,
   description: String,
   imgSrc: String,
   infoArr:{
-    type: Array,
-     default: () => []
+    type: Array <InfoItem>,
   },
   titleColor: String
 })
