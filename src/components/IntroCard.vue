@@ -60,7 +60,7 @@
 
     <!-- Imagen del producto -->
     <img
-      src="https://i.ibb.co/x8jP5bQ/insta-Go-Main.jpg"
+      src="https://i.ibb.co/gVCMz0L/IMG-20241206-WA0018.jpg"
       alt="Imagen representativa de InstaGo"
       class="w-full mt-6 rounded-lg shadow-md md:w-1/2 md:mt-0 animate-fade"
     />
