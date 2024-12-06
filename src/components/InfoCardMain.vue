@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-auto overflow-hidden transition-transform border shadow-lg max-w-96 bg-gradient-to-b from-orange-50 to-white rounded-xl hover:scale-105"
+    class="mx-auto overflow-hidden transition-transform border shadow-lg max-w-96 bg-gradient-to-b from-orange-50 to-white rounded-xl hover:scale-105 "
   >
     <!-- Imagen -->
     <div class="relative w-full h-48 overflow-hidden rounded-t-xl">
@@ -17,7 +17,7 @@
     <div class="p-5">
       <!-- Título -->
       <h2
-        class="mb-3 text-lg font-bold tracking-wide text-center text-gray-800 font-poppins">
+        class="mb-3 text-lg font-bold tracking-wide text-center text-rose-800 font-poppins">
         {{ title }}
       </h2>
 

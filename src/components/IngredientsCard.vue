@@ -1,38 +1,38 @@
 <template>
     <div class="">
-        <div class="max-w-sm">
-  <ul class="cards">
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image">
-            <!-- img -->
-          <img :src="imgSrc" alt="imagen ingrediente" />
-          <!-- <span class="card_price"><span>$</span>9</span> -->
+      <div class="max-w-sm mx-auto my-6">
+  <ul class="flex flex-col space-y-6">
+    <li class="flex justify-center">
+      <div class="overflow-hidden transition-transform duration-300 transform rounded-lg shadow-lg card bg-gradient-to-r from-pink-50 via-red-50 to-yellow-50 hover:scale-105">
+        <div class="relative w-full h-56 overflow-hidden rounded-t-lg card_image">
+          <!-- img -->
+          <img :src="imgSrc" alt="imagen ingrediente" class="object-cover w-full h-full" />
+          <!-- Optional price tag -->
+          <!-- <span class="absolute px-4 py-1 text-sm font-bold text-black bg-white rounded-full top-2 right-2">$9</span> -->
         </div>
-        <div class="card_content">
+        <div class="p-6 text-black card_content">
           <!-- Main title -->
-          <h2  class="text-yellow-600 card_title font-poppins">{{  mainTitle }}</h2>
-          <div class="card_text">
-            <!-- small intro -->
-            <p class="font-poppins">
-              {{ smallIntro }}
-            </p>
-            <hr />
-            <!-- description -->
-            <p class="font-poppins">{{ description }}
-            </p>
-            <hr>
-            <!-- list info -->
-             <ul>
-              <li class="mb-2 text-sm font-poppins" v-for="item in infoArr" :key="item.id"><strong class="text-yellow-700">{{ item.property }}:</strong> {{ item.description }}</li>
-              <hr>
-             </ul>
+          <h2 class="mb-4 text-2xl font-bold card_title text-rose-800">{{ mainTitle }}</h2>
+          <div class="space-y-4 card_text">
+            <!-- Small intro -->
+            <p class="text-lg font-poppins">{{ smallIntro }}</p>
+            <hr class="mb-4 border-white" />
+            <!-- Description -->
+            <p class="font-poppins">{{ description }}</p>
+            <hr class="mb-4 border-white" />
+            <!-- List info -->
+            <ul class="space-y-2">
+              <li v-for="item in infoArr" :key="item.id" class="text-sm">
+                <strong class="text-rose-700">{{ item.property }}:</strong> {{ item.description }}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </li>
   </ul>
 </div>
+
     </div>
 </template>
 
@@ -45,7 +45,7 @@ const props = defineProps({
   imgSrc: String,
   infoArr:{
     type: Array,
-     default: () => [] 
+     default: () => []
   },
   titleColor: String
 })
@@ -95,7 +95,7 @@ const props = defineProps({
   width: 45px;
   height: 45px;
   border-radius: 0.25rem;
-  background-color: #c89b3f;
+  background-color: #c83f54;
   font-size: 18px;
   font-weight: 700;
 }
@@ -111,7 +111,7 @@ const props = defineProps({
   left: 8px;
   padding: 4px 8px;
   border-radius: 0.25rem;
-  background-color: #c89b3f;
+  background-color: #cd2252;
   font-size: 14px;
   font-weight: 700;
 }
@@ -144,7 +144,7 @@ const props = defineProps({
 }
 
 .card_content::-webkit-scrollbar-thumb {
-  background: #c89b3f;
+  background: #c83f3f;
   border-radius: 15px;
 }
 
@@ -165,14 +165,14 @@ const props = defineProps({
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #c89b3f;
+  background-color: #dd3549;
   content: "";
 }
 
 hr {
   margin: 24px auto;
-  width: 50px;
-  border-top: 2px solid #c89b3f;
+  width: 100%;
+  border-top: 2px solid #cf2a51;
 }
 
 .card_text p {

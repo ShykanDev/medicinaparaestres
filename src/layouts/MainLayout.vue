@@ -1,48 +1,72 @@
 <template>
     <div class="">
-      <header class="sticky top-0 z-50 w-full shadow-lg bg-gradient-to-br from-slate-400 via-sky-500 to-slate-900">
+      <header class="sticky top-0 z-50 w-full shadow-lg bg-gradient-to-br from-rose-600 via-rose-500 to-slate-900">
   <!-- Barra superior -->
   <section class="flex items-center justify-between px-4 py-2 text-sm text-white">
-    <img class="h-8" src="../assets/ssl-certificate.png" alt="Certificado SSL">
-    <p class="font-bold tracking-wider ">medicinaparaestres.com</p>
+    <img class="hidden h-8 md:block" src="../assets/ssl-certificate.png" alt="Certificado SSL">
+   <div class="hidden text-xl md:flex"><span><span class="text-white animate-fade-down">medicina</span><span class="text-yellow-200 animate-fade-down">para</span><span class=" animate-fade-down">estres</span><span class="text-yellow-200 animate-fade-down">.com </span></span></div>
     <img class="h-8" src="https://medicinaparaansiedad.com/img/logo.png" alt="Logo">
+    <div class="flex flex-wrap items-center justify-center gap-4 font-semibold md:justify-start font-poppins">
+    <a href="tel:+525563950178" class="flex items-center gap-2 hover:underline">
+      <i class="fas fa-phone"></i>
+      <span>+52 55 6395 0178</span>
+    </a>
+    <a href="tel:+525563950179" class="flex items-center gap-2 hover:underline">
+      <i class="fas fa-phone"></i>
+      <span>+52 55 6395 0179</span>
+    </a>
+    <a href="mailto:informes@prasadam.mx" class="flex items-center gap-2 hover:underline">
+      <i class="fas fa-envelope"></i>
+      <span>informes@prasadam.mx</span>
+    </a>
+    <a href="https://wa.me/525562516687" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:underline">
+      <i class="fab fa-whatsapp"></i>
+      <span>+52 5562516687</span>
+    </a>
+  </div>
   </section>
 
   <!-- Navegación principal -->
   <nav class="flex justify-center bg-white shadow-md">
-    <ul class="flex px-6 py-4 space-x-6 text-base font-medium text-gray-700">
-      <li>
-        <RouterLink
-          :class="route.name === 'home' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
-          :to="{ name: 'home' }"
-        >Inicio</RouterLink>
-      </li>
-      <li>
-        <RouterLink
-          :class="route.name === 'spaOne' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
-          :to="{ name: 'spaOne' }"
-        >Beneficios</RouterLink>
-      </li>
-      <li>
-        <RouterLink
-          :class="route.name === 'spaTwo' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
-          :to="{ name: 'spaTwo' }"
-        >Ingredientes</RouterLink>
-      </li>
-      <li>
-        <RouterLink
-          :class="route.name === 'spaThree' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
-          :to="{ name: 'spaThree' }"
-        >Preguntas</RouterLink>
-      </li>
-      <li>
-        <RouterLink
-          :class="route.name === 'non' ? 'text-sky-500 border-b-2 border-sky-500' : 'text-white hover: bg-cyan-600 px-2 py-1 rounded-lg animate-fade-up'"
-          :to="{ name: 'home' }"
-        >Prasadam</RouterLink>
-      </li>
-    </ul>
-  </nav>
+  <ul class="flex px-6 py-4 space-x-6 text-base font-medium text-gray-700">
+    <li>
+      <RouterLink
+        :class="route.name === 'home' ? 'text-rose-500 border-b-2 border-rose-500' : 'animate-fade-up'"
+        :to="{ name: 'home' }"
+      >
+        <i class="mr-2 fas fa-home"></i> Inicio
+      </RouterLink>
+    </li>
+    <li>
+      <RouterLink
+        :class="route.name === 'spaOne' ? 'text-rose-500 border-b-2 border-rose-500' : 'hover:px-2 py-1 rounded-lg animate-fade-up'"
+        :to="{ name: 'spaOne' }"
+      >
+        <i class="mr-2 fas fa-heartbeat"></i> Beneficios
+      </RouterLink>
+    </li>
+    <li>
+      <RouterLink
+        :class="route.name === 'spaTwo' ? 'text-rose-500 border-b-2 border-rose-500' : 'hover:px-2 py-1 rounded-lg animate-fade-up'"
+        :to="{ name: 'spaTwo' }"
+      >
+        <i class="mr-2 fas fa-capsules"></i> Ingredientes
+      </RouterLink>
+    </li>
+    <li>
+      <RouterLink
+        :class="route.name === 'spaThree' ? 'text-rose-500 border-b-2 border-rose-500' : 'px-2 py-1 rounded-lg animate-fade-up'"
+        :to="{ name: 'spaThree' }"
+      >
+        <i class="mr-2 fas fa-question-circle"></i> Preguntas
+      </RouterLink>
+    </li>
+    <a class="hidden md:block" href="https://www.prasadam.mx/" target="_blank" rel="noopener noreferrer">
+      <i class="mr-2 fas fa-gift"></i> Prasadam
+    </a>
+  </ul>
+</nav>
+
 </header>
 
         <main class="overflow-hidden">
@@ -50,7 +74,7 @@
 
             </slot>
         </main>
-        <footer class="relative w-full p-6 text-white bg-sky-800 font-poppins">
+        <footer class="relative w-full p-6 text-white bg-rose-800 font-poppins">
         <!-- Sección Título -->
         <div class="mb-6 text-center">
             <h2 class="text-3xl font-bold lg:text-5xl">Contacto</h2>
@@ -77,13 +101,13 @@
             <!-- Teléfonos -->
             <div class="flex flex-col items-center">
                 <i class="mb-2 text-3xl fas fa-phone"></i>
-                <a href="tel:+525563950178" class="px-2 py-1 text-sm font-bold text-white rounded-lg hover:text-sky-500 bg-cyan-600 ">
+                <a href="tel:+525563950178" class="px-2 py-1 text-sm font-bold rounded-lg hover:text-rose-500 ">
                     +52 55 6395 0178
                 </a>
             </div>
             <div class="flex flex-col items-center">
                 <i class="mb-2 text-3xl fas fa-phone"></i>
-                <a href="tel:+525563950179" class="px-2 py-1 text-sm font-bold text-white rounded-lg hover:text-sky-500 bg-cyan-600 ">
+                <a href="tel:+525563950179" class="px-2 py-1 text-sm font-bold rounded-lg hover:text-rose-500 ">
                     +52 55 6395 0179
                 </a>
             </div>
@@ -91,7 +115,7 @@
             <!-- Email -->
             <div class="flex flex-col items-center">
                 <i class="mb-2 text-3xl fas fa-envelope"></i>
-                <a href="mailto:informes@prasadam.mx" class="px-2 py-1 text-sm font-bold text-white rounded-lg hover:text-sky-500 bg-cyan-600 ">
+                <a href="mailto:informes@prasadam.mx" class="px-2 py-1 text-sm font-bold rounded-lg hover:text-rose-500 ">
                     informes@prasadam.mx
                 </a>
             </div>
@@ -99,7 +123,7 @@
             <!-- WhatsApp -->
             <div class="flex flex-col items-center">
                 <i class="mb-2 text-3xl fab fa-whatsapp"></i>
-                <a href="https://wa.me/525562516687" target="_blank" rel="noopener noreferrer" class="px-2 py-1 text-sm font-bold text-white rounded-lg hover:text-sky-500 bg-cyan-600 ">
+                <a href="https://wa.me/525562516687" target="_blank" rel="noopener noreferrer" class="px-2 py-1 text-sm font-bold rounded-lg hover:text-rose-500 ">
                     +52 5562516687
                 </a>
             </div>
